@@ -1,49 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Simple Village Building Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Simple Village Building!</h1>
-    </header>
-    <main>
-        <section id="resources">
-            <h2>Resources</h2>
-            <div id="resource-displays">
-                <!-- Resource displays will be inserted here -->
-                <div class="resource">Gold: <span id="gold">0</span></div>
-                <div class="resource">Wood: <span id="wood">0</span></div>
-                <div class="resource">Stone: <span id="stone">0</span></div>
-            </div>
-        </section>
-        <section id="building-cards">
-            <h2>Building Cards</h2>
-            <div class="building-card">
-                <img src="icon-house.png" alt="House Icon">
-                <h3>House</h3>
-                <p>Cost: 10 Gold, 5 Wood</p>
-                <button class="action-button">Build</button>
-            </div>
-            <div class="building-card">
-                <img src="icon-farm.png" alt="Farm Icon">
-                <h3>Farm</h3>
-                <p>Cost: 15 Gold, 10 Wood</p>
-                <button class="action-button">Build</button>
-            </div>
-            <!-- Additional buildings can be added here -->
-        </section>
-        <section id="game-canvas">
-            <h2>Village Grid</h2>
-            <canvas id="villageCanvas" width="800" height="600"></canvas>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Simple Village Building Game</p>
-    </footer>
+    <h1>Welcome to the Village Building Game!</h1>
     <script src="game.js"></script>
 </body>
 </html>
