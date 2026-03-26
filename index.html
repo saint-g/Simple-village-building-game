@@ -1,37 +1,49 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Enhanced Village Building Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simple Village Building Game</title>
 </head>
 <body>
-    <h1>Welcome to the Enhanced Village Building Game</h1>
-    <p>In this game, you can build and upgrade your village with various improvements. Here are the 25 enhancements you can incorporate:</p>
-    <ul>
-        <li>Improvement 1: Resource Management</li>
-        <li>Improvement 2: New Building Types</li>
-        <li>Improvement 3: Character Customization</li>
-        <li>Improvement 4: AI Boost</li>
-        <li>Improvement 5: More Resource Nodes</li>
-        <li>Improvement 6: Trade System</li>
-        <li>Improvement 7: Expandable Land</li>
-        <li>Improvement 8: Villager Specialization</li>
-        <li>Improvement 9: Farming Mechanics</li>
-        <li>Improvement 10: Crafting System</li>
-        <li>Improvement 11: Weather Effects</li>
-        <li>Improvement 12: Events System</li>
-        <li>Improvement 13: Upgradable Buildings</li>
-        <li>Improvement 14: Defense Mechanisms</li>
-        <li>Improvement 15: Exploration Features</li>
-        <li>Improvement 16: Quests and Missions</li>
-        <li>Improvement 17: Community Projects</li>
-        <li>Improvement 18: Cultural Aspects</li>
-        <li>Improvement 19: Trade Routes</li>
-        <li>Improvement 20: Historical Events</li>
-        <li>Improvement 21: Villager Narratives</li>
-        <li>Improvement 22: Dynamic Economy</li>
-        <li>Improvement 23: Leadership Roles</li>
-        <li>Improvement 24: Festivals and Celebrations</li>
-        <li>Improvement 25: Village Reputation System</li>
-    </ul>
-    <p>Play and enjoy your enhanced village building experience!</p>
+    <header>
+        <h1>Welcome to Simple Village Building!</h1>
+    </header>
+    <main>
+        <section id="resources">
+            <h2>Resources</h2>
+            <div id="resource-displays">
+                <!-- Resource displays will be inserted here -->
+                <div class="resource">Gold: <span id="gold">0</span></div>
+                <div class="resource">Wood: <span id="wood">0</span></div>
+                <div class="resource">Stone: <span id="stone">0</span></div>
+            </div>
+        </section>
+        <section id="building-cards">
+            <h2>Building Cards</h2>
+            <div class="building-card">
+                <img src="icon-house.png" alt="House Icon">
+                <h3>House</h3>
+                <p>Cost: 10 Gold, 5 Wood</p>
+                <button class="action-button">Build</button>
+            </div>
+            <div class="building-card">
+                <img src="icon-farm.png" alt="Farm Icon">
+                <h3>Farm</h3>
+                <p>Cost: 15 Gold, 10 Wood</p>
+                <button class="action-button">Build</button>
+            </div>
+            <!-- Additional buildings can be added here -->
+        </section>
+        <section id="game-canvas">
+            <h2>Village Grid</h2>
+            <canvas id="villageCanvas" width="800" height="600"></canvas>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Simple Village Building Game</p>
+    </footer>
+    <script src="game.js"></script>
 </body>
 </html>
